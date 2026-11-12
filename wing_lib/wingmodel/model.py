@@ -531,7 +531,7 @@ def run_cycle(mesh: Mesh, material: Material = KAPTON, motion: Motion = Motion()
     """
     if rigid:
         n_cycles = 1
-    q, rows = None, []
+    q, rows, q_peak, peak = None, [], None, -1.0
     for cyc in range(n_cycles):
         for j in range(n_phase):
             ph = j / n_phase
@@ -540,6 +540,8 @@ def run_cycle(mesh: Mesh, material: Material = KAPTON, motion: Motion = Motion()
             if not r["converged"] and abs(st["phi_d"]) < 1e-10 and abs(st["theta"]) < 1e-10:
                 r = solve_phase(mesh, material, st, motion, aero, solver, np.zeros(mesh.n_free), rigid)
             q = r["q"]
+            if r["max_disp"] > peak:
+                peak, q_peak = r["max_disp"], q.copy()
             rows.append((cyc, ph, r["aero"]["lift"], r["aero"]["moment_flap"], st["phi_d"], r["max_disp"],
                          r["converged"], r["iterations"], st["phi"], st["theta"]))
     arr = np.array(rows, float)
@@ -549,7 +551,27 @@ def run_cycle(mesh: Mesh, material: Material = KAPTON, motion: Motion = Motion()
                               "iterations", "phi_rad", "theta_rad"],
         mean_lift=float(arr[keep, 2].mean()), aero_power=float(np.mean(-arr[keep, 3] * arr[keep, 4])),
         max_disp=float(arr[keep, 5].max()), all_converged=bool(arr[:, 6].all()), final_q=q,
+        q_at_peak=q_peak,
     )
+
+
+def chordwise_slope_deg(mesh: Mesh, q: np.ndarray) -> float:
+    """Largest chordwise slope of the deformed surface over the spanwise stations [deg].
+
+    At each spanwise station (nodes sharing x) a line z = a + b y is fitted to the normal
+    displacements; atan(b) is a local twist/camber-line angle induced by deformation.
+    """
+    z = np.zeros(len(mesh.points0))
+    z[mesh.free] = q
+    xs = np.round(mesh.points0[:, 0], 9)
+    worst = 0.0
+    for x in np.unique(xs):
+        sel = xs == x
+        if sel.sum() < 3 or np.ptp(mesh.points0[sel, 1]) < 1e-6:
+            continue
+        slope = np.polyfit(mesh.points0[sel, 1], z[sel], 1)[0]
+        worst = max(worst, abs(np.degrees(np.arctan(slope))))
+    return float(worst)
 
 
 def with_material(mesh_builder, material: Material, **kw) -> Mesh:
