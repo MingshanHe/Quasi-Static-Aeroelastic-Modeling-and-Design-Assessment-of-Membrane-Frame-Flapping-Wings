@@ -1,0 +1,10 @@
+# Code-only repository: measurements, raw acquisitions, manuscript drafts and run outputs are kept elsewhere.
+data/
+measurements/
+context/
+results/
+task.md
+paper_brief.md
+__pycache__/
+*.pyc
+reference/mean_force_comparison.csv

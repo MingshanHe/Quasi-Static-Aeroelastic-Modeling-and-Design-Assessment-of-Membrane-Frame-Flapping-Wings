@@ -1,0 +1,7 @@
+# Raw acquisitions (79 MB) and MATLAB reference outputs stay in the source study folder only.
+data/
+reference/
+results/
+__pycache__/
+*.pyc
+.git/

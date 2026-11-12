@@ -1,0 +1,30 @@
+{
+  "triangular": {
+    "source_step": "C:\\Users\\hemin\\OneDrive\\Desktop\\DataSet\\wing\\Triangular.STEP",
+    "source_sha256": "5fc096d34856ef11a9ef575a9aee460c2ee260025231147ea048fa59b72f185c",
+    "root_chord_mm": 28.0,
+    "tip_mm": [
+      80.213251506,
+      0.0
+    ],
+    "planform_area_mm2": 1122.985521084,
+    "coordinate_mapping": "model x=CAD x, model y=CAD y, model z=0; mounting tabs excluded",
+    "pet_path": "root-tip -> root-origin -> leading/curved edge -> wing-tip; no independent right beam",
+    "free_edge_assumption": "straight membrane edge from (0, root_chord) to wing-tip; membrane not present in STEP",
+    "section_assumption": "shared rectangular baseline PET sections; STEP section taper not calibrated in this run"
+  },
+  "curve": {
+    "source_step": "C:\\Users\\hemin\\OneDrive\\Desktop\\DataSet\\wing\\Curve.STEP",
+    "source_sha256": "ec35feea402de5419383be6e9e6ff64cd5f6966682a89de88303b14bdfa92918",
+    "root_chord_mm": 28.0,
+    "tip_mm": [
+      80.21246236660309,
+      9.26438528499753
+    ],
+    "planform_area_mm2": 1421.168523801185,
+    "coordinate_mapping": "model x=CAD x, model y=CAD y, model z=0; mounting tabs excluded",
+    "pet_path": "root-tip -> root-origin -> leading/curved edge -> wing-tip; no independent right beam",
+    "free_edge_assumption": "straight membrane edge from (0, root_chord) to wing-tip; membrane not present in STEP",
+    "section_assumption": "shared rectangular baseline PET sections; STEP section taper not calibrated in this run"
+  }
+}

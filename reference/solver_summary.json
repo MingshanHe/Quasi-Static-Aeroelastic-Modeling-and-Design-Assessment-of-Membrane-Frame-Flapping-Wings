@@ -1,0 +1,254 @@
+[
+  {
+    "wing": "Rect_K",
+    "frequency_Hz": 10,
+    "all_converged": true,
+    "max_displacement_mm": 1.4922345698799,
+    "last_two_cycle_mean_difference_mN": 0.0001112853816320758
+  },
+  {
+    "wing": "Rect_K",
+    "frequency_Hz": 11,
+    "all_converged": true,
+    "max_displacement_mm": 1.6020158858409,
+    "last_two_cycle_mean_difference_mN": 0.0003362080480441565
+  },
+  {
+    "wing": "Rect_K",
+    "frequency_Hz": 12,
+    "all_converged": true,
+    "max_displacement_mm": 1.7081304233451,
+    "last_two_cycle_mean_difference_mN": 0.00033851679653168487
+  },
+  {
+    "wing": "Rect_K",
+    "frequency_Hz": 13,
+    "all_converged": true,
+    "max_displacement_mm": 1.8109769116982,
+    "last_two_cycle_mean_difference_mN": 0.0002586647932442676
+  },
+  {
+    "wing": "Rect_K",
+    "frequency_Hz": 14,
+    "all_converged": true,
+    "max_displacement_mm": 1.9109432798108,
+    "last_two_cycle_mean_difference_mN": 4.5432812317836024e-05
+  },
+  {
+    "wing": "Rect_K",
+    "frequency_Hz": 15,
+    "all_converged": true,
+    "max_displacement_mm": 2.0082232615132,
+    "last_two_cycle_mean_difference_mN": 5.3904439661911496e-05
+  },
+  {
+    "wing": "Tri_K",
+    "frequency_Hz": 10,
+    "all_converged": true,
+    "max_displacement_mm": 0.6258427415552,
+    "last_two_cycle_mean_difference_mN": 5.028118491186284e-05
+  },
+  {
+    "wing": "Tri_K",
+    "frequency_Hz": 11,
+    "all_converged": true,
+    "max_displacement_mm": 0.6816157001268,
+    "last_two_cycle_mean_difference_mN": 3.183817907925768e-05
+  },
+  {
+    "wing": "Tri_K",
+    "frequency_Hz": 12,
+    "all_converged": true,
+    "max_displacement_mm": 0.7357118281423,
+    "last_two_cycle_mean_difference_mN": 3.9821952975589714e-05
+  },
+  {
+    "wing": "Tri_K",
+    "frequency_Hz": 13,
+    "all_converged": true,
+    "max_displacement_mm": 0.7883693291512001,
+    "last_two_cycle_mean_difference_mN": 4.037263653597356e-05
+  },
+  {
+    "wing": "Tri_K",
+    "frequency_Hz": 14,
+    "all_converged": true,
+    "max_displacement_mm": 0.8396609978119001,
+    "last_two_cycle_mean_difference_mN": 2.0929131929262046e-05
+  },
+  {
+    "wing": "Tri_K",
+    "frequency_Hz": 15,
+    "all_converged": true,
+    "max_displacement_mm": 0.889744692137,
+    "last_two_cycle_mean_difference_mN": 0.00010144501648087778
+  },
+  {
+    "wing": "Curve_K",
+    "frequency_Hz": 10,
+    "all_converged": true,
+    "max_displacement_mm": 0.8663682003544,
+    "last_two_cycle_mean_difference_mN": 1.8899226779042766e-05
+  },
+  {
+    "wing": "Curve_K",
+    "frequency_Hz": 11,
+    "all_converged": true,
+    "max_displacement_mm": 0.934370844161,
+    "last_two_cycle_mean_difference_mN": 2.1528355646782682e-05
+  },
+  {
+    "wing": "Curve_K",
+    "frequency_Hz": 12,
+    "all_converged": true,
+    "max_displacement_mm": 1.0002997205933,
+    "last_two_cycle_mean_difference_mN": 8.677020739075725e-06
+  },
+  {
+    "wing": "Curve_K",
+    "frequency_Hz": 13,
+    "all_converged": true,
+    "max_displacement_mm": 1.0643307809484,
+    "last_two_cycle_mean_difference_mN": 6.291236488362162e-06
+  },
+  {
+    "wing": "Curve_K",
+    "frequency_Hz": 14,
+    "all_converged": true,
+    "max_displacement_mm": 1.1266138312841,
+    "last_two_cycle_mean_difference_mN": 1.885092090238294e-05
+  },
+  {
+    "wing": "Curve_K",
+    "frequency_Hz": 15,
+    "all_converged": true,
+    "max_displacement_mm": 1.1873151922765,
+    "last_two_cycle_mean_difference_mN": 5.4656060843871757e-05
+  },
+  {
+    "wing": "Rect_T",
+    "frequency_Hz": 10,
+    "all_converged": true,
+    "max_displacement_mm": 4.1258827580254005,
+    "last_two_cycle_mean_difference_mN": 0.0
+  },
+  {
+    "wing": "Rect_T",
+    "frequency_Hz": 11,
+    "all_converged": true,
+    "max_displacement_mm": 4.4099582461806,
+    "last_two_cycle_mean_difference_mN": 0.0
+  },
+  {
+    "wing": "Rect_T",
+    "frequency_Hz": 12,
+    "all_converged": true,
+    "max_displacement_mm": 4.6932574789906,
+    "last_two_cycle_mean_difference_mN": 0.0
+  },
+  {
+    "wing": "Rect_T",
+    "frequency_Hz": 13,
+    "all_converged": true,
+    "max_displacement_mm": 4.968318035948,
+    "last_two_cycle_mean_difference_mN": 0.0
+  },
+  {
+    "wing": "Rect_T",
+    "frequency_Hz": 14,
+    "all_converged": true,
+    "max_displacement_mm": 5.2371886827943,
+    "last_two_cycle_mean_difference_mN": 0.0
+  },
+  {
+    "wing": "Rect_T",
+    "frequency_Hz": 15,
+    "all_converged": true,
+    "max_displacement_mm": 5.5005814007825995,
+    "last_two_cycle_mean_difference_mN": 0.0
+  },
+  {
+    "wing": "Tri_T",
+    "frequency_Hz": 10,
+    "all_converged": true,
+    "max_displacement_mm": 2.1757311361607,
+    "last_two_cycle_mean_difference_mN": 0.00012676145616681567
+  },
+  {
+    "wing": "Tri_T",
+    "frequency_Hz": 11,
+    "all_converged": true,
+    "max_displacement_mm": 2.3480940516284003,
+    "last_two_cycle_mean_difference_mN": 0.0003184082140476538
+  },
+  {
+    "wing": "Tri_T",
+    "frequency_Hz": 12,
+    "all_converged": true,
+    "max_displacement_mm": 2.5162852024912996,
+    "last_two_cycle_mean_difference_mN": 0.00030138997270459655
+  },
+  {
+    "wing": "Tri_T",
+    "frequency_Hz": 13,
+    "all_converged": true,
+    "max_displacement_mm": 2.6808925394237,
+    "last_two_cycle_mean_difference_mN": 0.0004214854511276622
+  },
+  {
+    "wing": "Tri_T",
+    "frequency_Hz": 14,
+    "all_converged": true,
+    "max_displacement_mm": 2.8425806196757,
+    "last_two_cycle_mean_difference_mN": 0.0005632860812683493
+  },
+  {
+    "wing": "Tri_T",
+    "frequency_Hz": 15,
+    "all_converged": true,
+    "max_displacement_mm": 3.0015996382019,
+    "last_two_cycle_mean_difference_mN": 8.761664317680218e-05
+  },
+  {
+    "wing": "Curve_T",
+    "frequency_Hz": 10,
+    "all_converged": true,
+    "max_displacement_mm": 2.9711370717962002,
+    "last_two_cycle_mean_difference_mN": 0.0005755666867453268
+  },
+  {
+    "wing": "Curve_T",
+    "frequency_Hz": 11,
+    "all_converged": true,
+    "max_displacement_mm": 3.1872364767622,
+    "last_two_cycle_mean_difference_mN": 0.0
+  },
+  {
+    "wing": "Curve_T",
+    "frequency_Hz": 12,
+    "all_converged": true,
+    "max_displacement_mm": 3.3973434306052,
+    "last_two_cycle_mean_difference_mN": 0.0
+  },
+  {
+    "wing": "Curve_T",
+    "frequency_Hz": 13,
+    "all_converged": true,
+    "max_displacement_mm": 3.6022252972466,
+    "last_two_cycle_mean_difference_mN": 0.0
+  },
+  {
+    "wing": "Curve_T",
+    "frequency_Hz": 14,
+    "all_converged": true,
+    "max_displacement_mm": 3.8020687581795998,
+    "last_two_cycle_mean_difference_mN": 0.0
+  },
+  {
+    "wing": "Curve_T",
+    "frequency_Hz": 15,
+    "all_converged": true,
+    "max_displacement_mm": 3.9975207372179,
+    "last_two_cycle_mean_difference_mN": 0.0
+  }
+]
