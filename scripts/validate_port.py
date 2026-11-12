@@ -47,6 +47,7 @@ def main(freqs):
         rows = list(pool.map(one_case, jobs))
     for r in rows:
         print("%-11s %-6s %2d Hz  mean MATLAB %8.4f  Python %8.4f  diff %+.4f mN  phase-RMS %.4f mN  maxdisp %.3f/%.3f mm conv=%s  %.1fs" % r, flush=True)
+    (ROOT / "results").mkdir(exist_ok=True)
     with open(ROOT / "results" / "port_validation.csv", "w", newline="") as fh:
         w = csv.writer(fh); w.writerow(["shape", "material", "freq_Hz", "matlab_mean_mN", "python_mean_mN", "diff_mN", "phase_rms_mN", "matlab_maxdisp_mm", "python_maxdisp_mm", "python_converged", "seconds"]); w.writerows(rows)
     d = np.array([r[5] for r in rows]); print("max |mean diff| = %.4f mN, max phase RMS = %.4f mN" % (np.abs(d).max(), max(r[6] for r in rows)))
