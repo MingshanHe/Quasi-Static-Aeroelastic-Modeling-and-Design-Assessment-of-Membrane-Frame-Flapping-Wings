@@ -8,3 +8,4 @@ paper_brief.md
 __pycache__/
 *.pyc
 reference/mean_force_comparison.csv
+paper/
